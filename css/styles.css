@@ -41,14 +41,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-.logo {
+.logo.link {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-}
-
-.site-header .logo {
   color: var(--logo-text-color);
 }
 
