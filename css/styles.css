@@ -1,14 +1,7 @@
-/* цвет акцента #2196F3; */
-/* цвет футера #2F303A; */
-/* черный #000000; */
-/* дополнительный цвет текста #212121; */
-/* основной цвет текста #757575; */
-/* цвет ссылок в футере rgba(255, 255, 255, 0.6); */
-
 :root {
   --header-bg-color: #ffffff;
-  --primary-bg-color: #e5e5e5;
-  --secondary-bg-color: #f5f4fa;
+  --primary-bg-color: #f5f4fa;
+  --hero-bg-color: #2f303a;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
@@ -18,7 +11,6 @@
 }
 
 body {
-  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -27,6 +19,10 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.list {
+  list-style: none;
 }
 
 /* Header */
@@ -80,6 +76,10 @@ body {
 
 /* Hero */
 
+.hero {
+  background-color: var(--hero-bg-color);
+}
+
 .hero .title {
   font-weight: 900;
   font-size: 44px;
@@ -124,29 +124,37 @@ body {
   color: var(--header-bg-color);
 }
 
-/* Feature */
+/* Main section */
 
-.feature-list {
+.title {
+  font-weight: 700;
+}
+
+.feature.title,
+.portfolio.title {
+  display: none;
+}
+
+.feature.list {
   line-height: 1.71;
 }
 
 .feature-list .title {
-  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
 
-/* Main section */
-
 .section > .title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-text-color);
 }
 
+.team {
+  background-color: var(--primary-bg-color);
+}
 .team .title {
   font-weight: 500;
   font-size: 16px;
@@ -161,7 +169,6 @@ body {
 }
 
 .portfolio .title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
